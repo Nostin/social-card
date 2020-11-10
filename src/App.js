@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { CardList } from './components/CardList/CardList'
+import { Card } from './components/Card/Card'
 
-function App() {
+const cardOne = {
+  icon: '/social-card-icon.png',
+  title: 'The Practical Dev',
+  author: 'sean',
+  handle: 'ThePracticalDev',
+  headline: 'headline',
+  postDate: '10 Nov 2020',
+  articleFooterTitle: 'Learning React?',
+  articleFooterContent: 'Here are some things to help you.'
+}
+
+const cardTwo = {
+  title: 'title Two',
+  author: 'sean',
+  handle: 'handle',
+  headline: 'headline',
+  postDate: '10 Nov 2020',
+  articleText: 'Learning React? Cool.',
+  articleFooterTitle: 'Learning React?',
+  articleFooterContent: 'Here are some things to help you.'
+}
+
+const cardThree = {
+  icon: '/social-card-icon.png',
+  title: 'The Practical Dev',
+  author: 'sean',
+  handle: 'ThePracticalDev',
+  headline: 'headline',
+  postDate: '10 Nov 2020',
+  articleText: 'Learning React? Cool.',
+}
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CardList>
+      <Card details={cardOne} first />
+      <Card details={cardTwo} />
+      <Card details={cardThree} />
+    </CardList>
   );
 }
 
