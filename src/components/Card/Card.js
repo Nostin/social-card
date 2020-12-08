@@ -12,10 +12,10 @@ const Card = ({ details, first }) => {
         <StyledCardHeader>
           <h2>{title}</h2>
           <p>@{handle}</p>
-          <p> - {postDate}</p>
+          <p>&nbsp;&bull; {postDate}</p>
         </StyledCardHeader>
         <p>{headline}</p>
-      <p>{`{author: ${author}}`}</p>
+      <p>{`{ author: ${author} }`}</p>
       <StyledContent hasArticleText={!!articleText} hasArticleFooter={!!articleFooterTitle || articleFooterContent}>
         {articleText && (
           <div className="top">

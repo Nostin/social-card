@@ -28,6 +28,10 @@ export const StyledCardHeader = styled.div`
     font-size: 1rem;
     margin: 0 10px 0 0;
   }
+
+  p {
+    color: #757575;
+  }
 `
 export const StyledIconContainer = styled.div`
   width: 50px;
